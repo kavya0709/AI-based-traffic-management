@@ -1,0 +1,36 @@
+.camDisplay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20vh;
+    margin-left: 20vw;
+    height: 60vh;
+    width: 60vw;
+    border-radius: 1rem;
+}
+
+.cams {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1rem;
+    height: 100%;
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.cam {
+    background-color: lightgrey;
+    border-radius: 1rem;
+}
+
+@media screen and (max-width: 910px) {
+    .cams {
+        grid-template-columns: auto;
+    }
+    .camDisplay {
+        margin-top: 5vh;
+        margin-left: 5vh;
+        height: 80vh;
+        width: 80vw;
+    }
+  }
